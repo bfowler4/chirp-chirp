@@ -15,7 +15,7 @@ var counter = {
   "y" : 0,  "z" : 0
 }
 
-function countLetters(counter, sample_text){
+function countLetters(counter, sample_text) {
   if (sample_text === '') {
     return counter;
   }

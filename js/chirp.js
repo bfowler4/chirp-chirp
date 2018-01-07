@@ -1,4 +1,4 @@
-function chirp(n){
+function chirp(n) {
   if (n === 1) {
     return `chirp`;
   }
