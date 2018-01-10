@@ -15,8 +15,17 @@ var counter = {
   "y" : 0,  "z" : 0
 }
 
-function countLetters(counter, sample_text){
-  // FIX ME
+function countLetters(counter, sample_text) {
+  if (sample_text === '') {
+    return counter;
+  }
+
+  let code = sample_text.charCodeAt(0);
+  if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
+    counter[sample_text.charAt(0).toLowerCase()] ++;
+  }
+
+  return countLetters(counter, sample_text.slice(1));
 }
 
 $(document).ready(function(){
